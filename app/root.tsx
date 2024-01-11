@@ -9,8 +9,12 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import stylesheet from "./styles/base.css";
+import BaseLayout from "./layouts/BaseLayout";
+
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  { rel: "stylesheet", href: stylesheet },
 ];
 
 export default function App() {
@@ -23,7 +27,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <BaseLayout>
+          <Outlet />
+        </BaseLayout>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

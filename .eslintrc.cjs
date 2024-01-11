@@ -60,6 +60,10 @@ module.exports = {
           typescript: {
             alwaysTryTypes: true,
           },
+          alias: {
+            map: [["~", path.resolve(__dirname, "./src")]],
+            extensions: [".ts", ".tsx"],
+          },
         },
       },
       extends: [

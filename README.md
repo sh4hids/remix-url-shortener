@@ -1,6 +1,13 @@
-# Welcome to Remix!
+# Hello World!
 
-- [Remix Docs](https://remix.run/docs)
+This is a simple url shortener app built to explore [Remix](https://remix.run) world.
+
+## Technologies
+
+- (Remix)[https://remix.run]
+- (Tailwind CSS)[https://tailwindcss.com/]
+- (Drizzle ORM)[https://orm.drizzle.team/]
+- (routes-zen)[https://github.com/sandulat/routes-gen]
 
 ## Development
 
